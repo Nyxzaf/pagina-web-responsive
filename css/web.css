@@ -1,0 +1,28 @@
+.fondo-encabezado {
+  background-color: aqua;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(rgb(80, 171, 231), green, blue, alpha);
+}
+
+.top-border {
+  border-top: 20px solid #007bff;
+}
+.bot-border {
+  border-top: 150px solid rgba(31, 30, 28, 0.89);
+}
+
+.unstyled-ul {
+  list-style: none;
+}
+
+.section-divider{
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+.divider{
+    margin: auto;
+    border-top: 3px solid #dee2e6!important;
+    width: 100%;
+    max-width: 900px;
+}

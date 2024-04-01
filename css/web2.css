@@ -1,0 +1,87 @@
+.button {
+    line-height: 1;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: .75rem;
+    background-color: var(--clr);
+    color: #fff;
+    border-radius: 10rem;
+    font-weight: 600;
+    padding: .75rem 1.5rem;
+    padding-left: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transition: background-color .3s;
+  }
+  
+  .button__icon-wrapper {
+    flex-shrink: 0;
+    width: 25px;
+    height: 25px;
+    position: relative;
+    color: var(--clr);
+    background-color: #fff;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+  }
+  
+  .button:hover {
+    background-color: #000;
+  }
+  
+  .button:hover .button__icon-wrapper {
+    color: #000;
+  }
+  
+  .button__icon-svg--copy {
+    position: absolute;
+    transform: translate(-150%, 150%);
+  }
+  
+  .button:hover .button__icon-svg:first-child {
+    transition: transform .3s ease-in-out;
+    transform: translate(150%, -150%);
+  }
+  
+  .button:hover .button__icon-svg--copy {
+    transition: transform .3s ease-in-out .1s;
+    transform: translate(0);
+  }
+
+.custom-box {
+    background-color: #ffdfdf; /* Fondo naranja claro */
+    border: 1px solid #ebeab6; 
+    border-radius: 15px;/* Borde naranja claro */
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 16px;
+  }
+
+  body {
+    overflow-x: hidden; /* Evita la barra de desplazamiento horizontal */
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
+    z-index: 999; /* Asegura que esté encima del resto del contenido */
+    display: none; /* Por defecto, estará oculto */
+}
+
+.overlay.active {
+    display: block; /* Muestra el overlay cuando está activo */
+}
+
+.navbar-collapse {
+    background-color: #fff; /* Fondo blanco para el contenido de la barra desplegable */
+    position: relative; /* Asegura que esté apilado sobre el overlay */
+    z-index: 1000; /* Asegura que esté encima del overlay */
+}
